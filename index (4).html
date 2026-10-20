@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b67">
+  <meta name="description" content="Reporte Ciudadano: registra problemas urbanos y consulta su seguimiento.">
+  <title>Reporte Ciudadano | Tu ciudad, tu voz, tu cambio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Reporte Ciudadano, inicio">
+      <img class="brand-mark" src="logo-lupa-ciudad.png" alt="" aria-hidden="true"><span>Reporte <b>Ciudadano</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ <span class="sr-only">Abrir menú</span></button>
+    <nav id="mainNav" class="main-nav">
+      <a href="#inicio">Inicio</a><a href="#como-funciona">Cómo funciona</a><a href="#problemas">Tipos de problemas</a>
+      <a href="#mejorar">Mejorar la ciudad</a><a href="#seguimiento">Seguimiento</a>
+      <button class="nav-cta" data-open-form>Reportar un problema</button>
+      <a class="contact-link" href="https://wa.me/59172981122?text=Hola%2C%20quiero%20obtener%20informaci%C3%B3n%20sobre%20Reporte%20Ciudadano." target="_blank" rel="noopener">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image" role="img" aria-label="Letrero turístico de Tarija al atardecer"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <span class="eyebrow">PARTICIPACIÓN CIUDADANA</span>
+        <h1>Tu ciudad,<br><span>tu voz, tu cambio.</span></h1>
+        <p>Identifica problemas de tu barrio, registra los detalles y ayúdanos a construir una ciudad más cuidada, segura y conectada.</p>
+        <div class="hero-actions"><button class="button button-primary" data-open-form>＋ Reportar un problema</button><a class="button button-light" href="#como-funciona">Cómo funciona <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="status-dot"></span> Reportes organizados en un solo lugar</div>
+      </div>
+      <div class="hero-card"><span class="hero-card-icon">📍</span><div><strong>Tu barrio importa</strong><small>Una alerta puede iniciar un cambio.</small></div></div>
+    </section>
+
+    <section class="section intro" id="como-funciona">
+      <div class="section-heading"><span class="eyebrow">SENCILLO Y DIRECTO</span><h2>Hacer un reporte toma <span>solo unos pasos.</span></h2><p>Comparte la información necesaria para que un problema urbano pueda ser identificado y revisado.</p></div>
+      <div class="steps">
+        <article class="step"><span class="step-number">01</span><div class="step-icon">👀</div><h3>Identifica</h3><p>Encuentra un problema que afecte a tu calle o comunidad.</p></article>
+        <article class="step"><span class="step-number">02</span><div class="step-icon">📝</div><h3>Registra</h3><p>Describe qué ocurre e indica una ubicación clara.</p></article>
+        <article class="step"><span class="step-number">03</span><div class="step-icon">🔎</div><h3>Guarda tu código</h3><p>Recibe un código para consultar el reporte en este navegador.</p></article>
+        <article class="step"><span class="step-number">04</span><div class="step-icon">🌱</div><h3>Haz seguimiento</h3><p>Consulta el estado local cuando tengas tu código a mano.</p></article>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="problemas">
+      <div class="section-heading"><span class="eyebrow">¿QUÉ ESTÁ PASANDO?</span><h2>¿Qué problemas puedes <span>reportar?</span></h2><p>Selecciona una categoría para iniciar un reporte con el tipo de problema ya elegido.</p></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Calles y baches"><span class="category-icon">🛣️</span><strong>Calles y baches</strong><small>Huecos, pavimento dañado o vías deterioradas.</small><span class="card-arrow">↗</span></button>
+        <button class="category-card" data-category="Basura y limpieza"><span class="category-icon">♻️</span><strong>Basura y limpieza</strong><small>Acumulación de residuos o puntos sucios.</small><span class="card-arrow">↗</span></button>
+        <button class="category-card" data-category="Alumbrado público"><span class="category-icon">💡</span><strong>Alumbrado público</strong><small>Luminarias apagadas o dañadas.</small><span class="card-arrow">↗</span></button>
+        <button class="category-card" data-category="Fugas de agua"><span class="category-icon">💧</span><strong>Fugas de agua</strong><small>Pérdidas de agua en la vía pública.</small><span class="card-arrow">↗</span></button>
+        <button class="category-card" data-category="Semáforos y señalización"><span class="category-icon">🚦</span><strong>Semáforos y señalización</strong><small>Señales faltantes o semáforos defectuosos.</small><span class="card-arrow">↗</span></button>
+        <button class="category-card" data-category="Espacios públicos"><span class="category-icon">🌳</span><strong>Espacios públicos</strong><small>Plazas, parques y mobiliario urbano.</small><span class="card-arrow">↗</span></button>
+        <button class="category-card" data-category="Alcantarillado"><span class="category-icon">🕳️</span><strong>Alcantarillado</strong><small>Desagües obstruidos u otros inconvenientes.</small><span class="card-arrow">↗</span></button>
+        <button class="category-card" data-category="Otros problemas urbanos"><span class="category-icon">📣</span><strong>Otros problemas</strong><small>Cuéntanos sobre otra situación de tu entorno.</small><span class="card-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section improve-section" id="mejorar">
+      <div class="improve-copy"><span class="eyebrow">UNA CIUDAD MEJOR EMPIEZA CONTIGO</span><h2>Pequeñas acciones generan <span>grandes cambios.</span></h2><p>La información clara ayuda a reconocer necesidades y organizar la participación ciudadana.</p>
+        <div class="action-list">
+          <button class="action-option active" data-action="0"><span>📢</span><span><b>Reporta lo que ves</b><small>Haz visible el problema.</small></span><span>→</span></button>
+          <button class="action-option" data-action="1"><span>📷</span><span><b>Aporta evidencia</b><small>Una foto opcional puede dar contexto.</small></span><span>→</span></button>
+          <button class="action-option" data-action="2"><span>🤝</span><span><b>Participa en comunidad</b><small>Comparte información responsable.</small></span><span>→</span></button>
+          <button class="action-option" data-action="3"><span>🔍</span><span><b>Haz seguimiento</b><small>Consulta el código de tu reporte.</small></span><span>→</span></button>
+        </div>
+      </div>
+      <div class="action-panel"><div class="city-art" aria-hidden="true"><span class="sun"></span><span class="building b1"></span><span class="building b2"></span><span class="building b3"></span><span class="tree">♣</span><span class="road"></span></div><div class="action-panel-content"><span class="eyebrow">TU PARTICIPACIÓN CUENTA</span><h3 id="actionTitle">Reporta lo que ves</h3><p id="actionDescription">Describe el problema con respeto y claridad. Incluye una ubicación para que pueda identificarse.</p><button class="button button-primary" id="actionButton" type="button">Crear un reporte →</button></div></div>
+    </section>
+
+    <section class="section tracking-section" id="seguimiento">
+      <div class="tracking-copy"><span class="eyebrow">CONSULTA TU REPORTE</span><h2>Seguimiento <span>transparente.</span></h2><p>Introduce el código que recibiste al registrar el reporte en este navegador.</p><div class="tracking-form"><label for="trackingCode">Código de seguimiento</label><div class="tracking-input-row"><input id="trackingCode" placeholder="Ej. RC-AB12CD" autocomplete="off"><button class="button button-primary" id="lookupButton">Consultar</button></div></div><p class="fine-print">Nota: los datos se guardan solo en este navegador. No hay conexión con un sistema institucional.</p></div>
+      <div class="tracking-result" id="trackingResult" aria-live="polite"><div class="empty-state-icon">🔎</div><h3>Tu reporte, a un código de distancia</h3><p>Cuando registres un reporte, podrás consultar aquí la información guardada localmente.</p></div>
+    </section>
+
+    <section class="section benefits-section">
+      <div class="section-heading"><span class="eyebrow">¿POR QUÉ PARTICIPAR?</span><h2>Una comunidad más <span>conectada.</span></h2><p>Beneficios esperados de una plataforma ciudadana organizada.</p></div>
+      <div class="benefit-grid"><article><span>💬</span><h3>Mejor comunicación</h3><p>Facilita reunir información sobre necesidades del entorno.</p></article><article><span>🗂️</span><h3>Información organizada</h3><p>Los reportes quedan estructurados para su consulta local.</p></article><article><span>📍</span><h3>Contexto de ubicación</h3><p>Ayuda a identificar zonas que requieren atención.</p></article><article><span>🙌</span><h3>Participación activa</h3><p>Promueve que las personas aporten de manera constructiva.</p></article></div>
+    </section>
+
+    <section class="institution-note"><div><span class="eyebrow">UNA PROPUESTA CON POTENCIAL</span><h2>La información puede impulsar mejores decisiones.</h2><p>Con acuerdos y una integración autorizada, los reportes podrían derivarse a las instituciones competentes. Esta versión es un prototipo frontend: no está conectada a entidades públicas ni confirma atención institucional. El proyecto podría sostenerse mediante licencias, personalización, paneles administrativos y soporte, manteniendo gratuito el reporte ciudadano básico.</p></div><div class="note-icon">🏙️</div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><a class="brand brand-footer" href="#inicio"><img class="brand-mark" src="logo-lupa-ciudad.png" alt="" aria-hidden="true"><span>Reporte <b>Ciudadano</b></span></a><p>Tu voz puede ayudar a mejorar el lugar donde vivimos.</p></div><div class="footer-links"><strong>Explora</strong><a href="#como-funciona">Cómo funciona</a><a href="#problemas">Tipos de problemas</a><a href="#seguimiento">Seguimiento</a></div><div class="footer-links"><strong>Contacto y privacidad</strong><a href="https://wa.me/59172981122?text=Hola%2C%20quiero%20obtener%20informaci%C3%B3n%20sobre%20Reporte%20Ciudadano." target="_blank" rel="noopener">WhatsApp de contacto</a><a href="#privacidad" id="privacyLink">Aviso de privacidad</a><small>Prototipo local, sin base institucional.</small></div><div class="copyright">© <span id="year"></span> Reporte Ciudadano · Prototipo demostrativo</div></footer>
+
+  <dialog id="reportDialog" class="report-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header"><div><span class="eyebrow">FORMULARIO CIUDADANO</span><h2 id="dialogTitle">Reportar un problema</h2><p>Completa los campos para registrar el incidente.</p></div><button class="close-dialog" id="closeDialog" aria-label="Cerrar formulario">×</button></div>
+    <form id="reportForm">
+      <div class="form-grid">
+        <div class="field"><label for="citizenName">Tu nombre *</label><input id="citizenName" name="name" required maxlength="100" placeholder="Nombre y apellido"></div>
+        <div class="field"><label for="citizenPhone">Número de contacto (opcional)</label><input id="citizenPhone" name="phone" type="tel" maxlength="30" placeholder="Tu teléfono"></div>
+        <div class="field full"><label for="category">Tipo de problema *</label><select id="category" name="category" required><option value="">Selecciona una categoría</option><option>Calles y baches</option><option>Basura y limpieza</option><option>Alumbrado público</option><option>Fugas de agua</option><option>Semáforos y señalización</option><option>Espacios públicos</option><option>Alcantarillado</option><option>Otros problemas urbanos</option></select></div>
+        <div class="field full"><label for="description">Descripción detallada *</label><textarea id="description" name="description" required maxlength="1500" rows="4" placeholder="¿Qué sucede? ¿Desde cuándo?"></textarea></div>
+        <div class="field full"><label for="location">Ubicación del problema *</label><div class="location-row"><input id="location" name="location" required maxlength="250" placeholder="Calle, zona o referencia"><button type="button" class="button button-outline" id="useLocation">Usar mi ubicación</button></div><small id="locationHint">También puedes escribir la ubicación manualmente.</small></div>
+        <div class="field full"><label for="photo">Fotografía (opcional)</label><input id="photo" name="photo" type="file" accept="image/*"><small id="photoName">Puedes elegir una imagen como referencia. No se sube a un servidor.</small></div>
+      </div>
+      <div class="privacy-check"><input type="checkbox" id="confirmAccuracy" required><label for="confirmAccuracy">Confirmo que la información es correcta según mi conocimiento.</label></div>
+      <button class="button button-primary submit-button" id="submitReport" type="submit">Enviar reporte <span>→</span></button>
+      <p class="form-disclaimer">Al enviar, el reporte se guardará en este navegador y se intentará abrir el envío por WhatsApp al 72981122. La apertura de WhatsApp no significa que el mensaje se haya enviado.</p>
+      <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+    </form>
+    <div id="successPanel" class="success-panel" hidden aria-live="polite"><div class="success-icon">✓</div><h3>¡Reporte confirmado en este navegador!</h3><p id="successText"></p><div class="code-box"><span>Tu código de seguimiento</span><strong id="successCode"></strong><button type="button" class="button button-outline" id="copyCode">Copiar código</button></div><p class="success-whatsapp" id="whatsappStatus">El registro local está guardado. WhatsApp puede abrirse para completar el envío.</p><div class="success-actions"><button class="button button-outline" id="finishSuccess" type="button">Cerrar</button><a class="button button-primary" id="sendWhatsApp" href="https://wa.me/59172981122" target="_blank" rel="noopener noreferrer">Enviar por WhatsApp ↗</a><button class="button button-primary" id="newReportButton" type="button">Registrar otro reporte</button></div></div>
+  </dialog>
+
+  <dialog id="privacyDialog" class="privacy-dialog"><button class="close-dialog" id="closePrivacy" aria-label="Cerrar">×</button><span class="eyebrow">AVISO DE PRIVACIDAD</span><h2>¿Dónde se guardan tus datos?</h2><p>Este prototipo almacena los reportes y el perfil en LocalStorage de tu navegador. No se transmiten a una base institucional ni se sincronizan con otros dispositivos. Evita incluir información sensible innecesaria. Si borras los datos del navegador, podrías perder los registros locales.</p><p>La fotografía no se carga a ningún servidor. El mensaje de WhatsApp se prepara mediante un enlace; para confirmar el envío, WhatsApp requiere una acción del usuario. La automatización real requiere un backend seguro y una integración autorizada con un proveedor de mensajería.</p><button class="button button-primary" id="privacyOkay">Entendido</button></dialog>
+</body>
+</html>
